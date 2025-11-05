@@ -1,18 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Outfit:400,500,600&display=swap');
+
+body {
+    font-family: 'Outfit', sans-serif !important;
+}
 
 /*Backgrounds*/
-.bg-main {
-    background-color: #FFFEFE;
+.bg-one {
+    background-color: #C1B6F8;
 }
 
-.bg-second {
-    background-color: #F3F4F6;
+.bg-two {
+    background-color: #EDACD2;
 }
 
-/*Font*/
-.text-color-blue {
-    color: #263FA9;
+.bg-three {
+    background-color: #9DC4F8;
 }
 
-.text-color-black {
-    color: #000000;
+.bg-four {
+    background-color: #F8D8B0;
+}
+
+.bg-five {
+    background-color: #86E7D4;
 }
