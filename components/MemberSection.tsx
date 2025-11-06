@@ -5,13 +5,13 @@ interface MemberSectionProps {
     name: string;
     job: string;
     bg: string;
-    order: number;
+    order: string;
 }
 
 export default function MemberSection({ img, name, job, bg, order }: MemberSectionProps) {
     return(
         <div 
-            className={`relative bg-${bg} aspect-square p-5 flex flex-col justify-end order-${order}`}   
+            className={`relative bg-${bg} aspect-square p-6 flex flex-col justify-end ${order}`}   
         >
             <Image 
                 src={img}
@@ -20,7 +20,7 @@ export default function MemberSection({ img, name, job, bg, order }: MemberSecti
                 className="object-cover z-0"
                 priority 
             />
-            <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-black/50 to-transparent z-0" />
+            <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-black/75 to-transparent z-0" />
             <h2 className="z-10 text-[20px] font-semibold">{name}</h2>
             <h3 className="text-[16px] z-10">{job}</h3>
         </div>
