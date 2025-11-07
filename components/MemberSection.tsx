@@ -11,13 +11,13 @@ interface MemberSectionProps {
 export default function MemberSection({ img, name, job, bg, order }: MemberSectionProps) {
     return(
         <div 
-            className={`relative bg-${bg} aspect-square p-6 flex flex-col justify-end ${order}`}   
+            className={`group overflow-hidden relative bg-${bg} aspect-square p-6 flex flex-col justify-end ${order}`}   
         >
             <Image 
                 src={img}
                 alt={name}
                 fill
-                className="object-cover z-0"
+                className="object-cover z-0 transition-transform duration-350 group-hover:scale-115"
                 priority 
             />
             <div className="absolute bottom-0 left-0 right-0 h-1/3 bg-gradient-to-t from-black/75 to-transparent z-0" />

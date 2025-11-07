@@ -59,8 +59,15 @@ export default function Home() {
           bg='two'
           order='order-3'
         />
-        <div className="aspect-square px-6 py-10 flex flex-col justify-end order-7 lg:order-4">
-          <a href="#" className="font-semibold text-black inline-flex items-center hover:text-[#263FA9] duration-250">See all members <FiArrowUpRight size={20} /></a>
+        <div className="aspect-square px-6 py-10 flex flex-col items-start justify-end order-7 lg:order-4">
+          <a 
+            href="#" 
+            className="
+              font-semibold text-black inline-flex items-center 
+              hover:text-[#263FA9] hover:scale-105 duration-250"
+          >
+            See all members <FiArrowUpRight size={20} />
+          </a>
         </div>
         <MemberSection
           img='/images/person_3.png'
